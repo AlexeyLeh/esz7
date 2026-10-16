@@ -6,10 +6,10 @@ Replacement for a ground unit equipped with pressure and weight sensors.
 This project runs on Xilinx Zynq 2023.2 Linux (ARMv7).
 (Theoretically, it can run on any Linux or Windows system.)
 
-## 2. esz7-siu
+## 2. esz7
 
 ```
-ESZ7-SIU Ver. 2.1.1 Oct 16 2025 (built Oct 24 2025 11:28:22)
+ESZ7 Ver. 2.1.1 Oct 16 2025 (built Oct 24 2025 11:28:22)
 
 Usage: esz7-siu [options] [-d <max_npnts>] [-v] [-h]
 Where options are:
@@ -20,12 +20,12 @@ Where options are:
 -h                  - help
 -v                  - version
 
-See esz7-siu.cfg to set up the working configuration.
+See esz7.cfg to set up the working configuration.
 
 Examples:
 
 ```
-$ ./esz7-siu
+$ ./esz7
 ```
 
 #### Operational Ports

@@ -6,12 +6,12 @@
 Данный проект работает на  Xilinx Zynq 2023.2 Linux ARMv7.  
 (Теоретически может работать на любом Linux и Windows)
 
-## 2. esz7-siu
+## 2. esz7
 
 ```
-ESZ7-SIU Ver. 2.1.1 Oct 16 2025 (built Oct 24 2025 11:28:22)
+ESZ7 Ver. 2.1.1 Oct 16 2025 (built Oct 24 2025 11:28:22)
 
-Usage: esz7-siu  \\\[options] \\\[-d <max\\\_npnts>] \\\[-v] \\\[-h]
+Usage: esz7  \\\[options] \\\[-d <max\\\_npnts>] \\\[-v] \\\[-h]
 Where options are
     --mode <type>       - work mode, where type is Atlas, ADS, SureShot
     --dump <type>       - save obj to files. type: 1..3
@@ -19,13 +19,13 @@ Where options are
     -h                  - help
     -v                  - version
 
-see esz7-siu.cfg to setup work configuration
+see esz7.cfg to setup work configuration
 ```
 
 Примеры:
 
 ```
-$ ./esz7-siu
+$ ./esz7
 ```
 
 #### Рабочие порты
