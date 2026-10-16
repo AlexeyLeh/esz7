@@ -1,3 +1,33 @@
+s2
+zzz
+xxx
+s2.cfg
+s2.log
+*.raw
+*.bak
+
+*-debug
+*.pro.user
+*.log
+*.d
+*.slo
+*.lo
+
+*.dll
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.lib
+
+Users*AppData*
+build/*
+build-Release/*
+build-Debug/*
+workspace.xml
+.idea/workspace.xml
+
 # Prerequisites
 *.d
 

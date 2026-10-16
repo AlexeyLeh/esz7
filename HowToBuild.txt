@@ -1,0 +1,34 @@
+1. prepare for project building
+
+    $ mkdir build
+    $ cd build
+    $ cmake -G "MinGW Makefiles" ..
+or
+    $ mkdir build
+    $ cmake -G "MinGW Makefiles" -B build .
+
+
+
+2. build project
+
+2.1
+    $ cd build
+    $ cmake --build . -j26
+or
+    $ cmake --build ./build -j26
+
+
+
+3. project clean 
+
+    $ cd build
+    $ cmake --build . --target clean
+or
+    $ cmake --build ./build --target clean
+
+
+4. where app was built
+
+    $ ls -l build/adc_term
+
+
