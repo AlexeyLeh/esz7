@@ -47,7 +47,7 @@ $ ./esz7
 
 ## 3. Недоделки (текущие особенности)
 
-Пункты меню в SureShot с которыми работает esz7-siu:
+Пункты меню в SureShot с которыми работает esz7:
 
 #### MWD - MWD Selection
 
@@ -107,12 +107,12 @@ sudo apt install -y gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf binutils-arm
 
 1. Подготовка сборки
 
-    `cd /.../esz7-siu/ cmake.exe -S . -B build`
+    `cd /.../esz7/ cmake.exe -S . -B build`
 
 2. Сборка проекта
 
 ```
-   cmake.exe --build debug -v --target esz7-siu -j4
+   cmake.exe --build debug -v --target esz7 -j4
    ```
 
 3. Очистка проекта
@@ -147,6 +147,6 @@ or
 ## 6. Место, где находится готовая программа
 
    ```
-      $ ls -l build\esz7-siu\*
+      $ ls -l build\esz7\*
       ```
 

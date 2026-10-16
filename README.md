@@ -11,7 +11,7 @@ This project runs on Xilinx Zynq 2023.2 Linux (ARMv7).
 ```
 ESZ7 Ver. 2.1.1 Oct 16 2025 (built Oct 24 2025 11:28:22)
 
-Usage: esz7-siu [options] [-d <max_npnts>] [-v] [-h]
+Usage: esz7 [options] [-d <max_npnts>] [-v] [-h]
 Where options are:
 --mode <type>       - operating mode (supported types: Atlas, ADS, SureShot)
 --dump <type>       - save objects to files
@@ -47,7 +47,7 @@ Ports for interfacing with APS ADS (decoder) and SureShot:
 
 ## 3. Unfinished Features (Current Limitations)
 
-SureShot menu items supported by esz7-siu:
+SureShot menu items supported by esz7:
 
 #### MWD - MWD Selection
 
@@ -105,13 +105,13 @@ Note: The build procedure is also described in the **HowToBuild.txt** file for b
 
 1. Preparing the build
 
-`cd /.../esz7-siu/`
+`cd /.../esz7/`
 `cmake.exe -S .` -B build`
 
 2. Building the project
 
 ```
-cmake.exe --build debug -v --target esz7-siu -j4
+cmake.exe --build debug -v --target esz7 -j4
 ```
 
 3. Cleaning the project
@@ -146,5 +146,5 @@ or
 ## 6. Location of the compiled program
 
 ```
-$ ls -l build\esz7-siu\*
+$ ls -l build\esz7\*
 ```
