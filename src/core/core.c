@@ -109,8 +109,8 @@ static int32_t sram_value(const AdcRec_t *restrict rec, const uint32_t index, in
     // 0x07065512 - the special fixed adc command constant (STATUS0 CRC DAT CMD) (07 - good status)
     if ((status & 0x00FFFFFFu) != 0x00065512) {
         const uint32_t st = __builtin_bswap32(status);
-        LOG(CRITICAL, "v[%d]:%016llX status:0x%08X (%06X <> 125506)", index, v, st, st >> 8u);
-        DBGF(0, "v[%d]:%016llX status:0x%08X (%06X <> 125506)", index, v, st, st >> 8u);
+        LOG(CRITICAL, "v[%03d]:%016llX status:0x%08X (%06X <> 125506)", index, v, st, st >> 8u);
+        DBGF(0, "v[%03d]:%016llX status:0x%08X (%06X <> 125506)", index, v, st, st >> 8u);
         *crcerr = 1;
         if (index > 0) {
             v = rec[index - 1].value;

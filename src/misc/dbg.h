@@ -49,13 +49,13 @@ do { \
                 _o_f_f_ = 1; \
             } \
             if (cfg()->shortmsg == 0) { \
-                printf("%s [%d] %s %s", _t_i_m_, LEVEL, _func_name_, _msg_ptr_ + _o_f_f_); \
+                printf("%s [%d] L%04u %s %s", _t_i_m_, LEVEL, __LINE__, _func_name_, _msg_ptr_ + _o_f_f_); \
             } else { \
-                printf("%s %s", _t_i_m_, _msg_ptr_ + _o_f_f_); \
+                printf("%s L%04u %s", _t_i_m_, __LINE__, _msg_ptr_ + _o_f_f_); \
             } \
         } else { \
             if (cfg()->shortmsg == 0) { \
-                printf("%s [%d] %s", _t_i_m_, LEVEL, _func_name_); \
+                printf("%s [%d] L%04u %s", _t_i_m_, LEVEL, __LINE__, _func_name_); \
             } else { \
                 ; \
             } \
@@ -98,9 +98,9 @@ do { \
             _o_f_f_ = 1; \
         } \
         if (cfg()->shortmsg == 0) { \
-            printf("%s [%d] %s %s", _t_i_m_, LEVEL, _func_name_, _buf_ + _o_f_f_); \
+            printf("%s [%d] L%04u %s %s", _t_i_m_, LEVEL, __LINE__, _func_name_, _buf_ + _o_f_f_); \
         } else { \
-            printf("%s %s", _t_i_m_, _buf_ + _o_f_f_); \
+            printf("%s L%04u %s", _t_i_m_, __LINE__, _buf_ + _o_f_f_); \
         } \
         fflush(stdout); \
     } \
@@ -135,7 +135,7 @@ do { \
             puts(""); \
             off = 1; \
         } \
-        printf("%s [%d] %s %s", tim, LEVEL, func_name, buf + off); \
+        printf("%s [%d] L%04u %s %s", tim, LEVEL, __LINE__, func_name, buf + off); \
         fflush(stdout); \
     } \
 } while(0)
